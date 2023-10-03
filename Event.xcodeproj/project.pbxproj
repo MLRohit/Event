@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F61BFF42ACBF6D2002180D0 /* StackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61BFF22ACBF6D2002180D0 /* StackItemView.swift */; };
+		8F61BFF52ACBF6D2002180D0 /* StackItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F61BFF32ACBF6D2002180D0 /* StackItemView.xib */; };
+		8F61BFF82ACBF80E002180D0 /* FLUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 8F61BFF72ACBF80E002180D0 /* FLUtilities */; };
+		8F61BFFA2ACBF82F002180D0 /* BottomStackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61BFF92ACBF82F002180D0 /* BottomStackItem.swift */; };
+		8F61BFFE2ACBF9CA002180D0 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F61BFFD2ACBF9CA002180D0 /* TabBarView.swift */; };
 		8F86589E2ABC247100B64F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86589D2ABC247100B64F63 /* AppDelegate.swift */; };
 		8F8658A02ABC247100B64F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86589F2ABC247100B64F63 /* SceneDelegate.swift */; };
 		8F8658A22ABC247100B64F63 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8658A12ABC247100B64F63 /* EventListViewController.swift */; };
@@ -45,6 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F61BFF22ACBF6D2002180D0 /* StackItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackItemView.swift; sourceTree = "<group>"; };
+		8F61BFF32ACBF6D2002180D0 /* StackItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackItemView.xib; sourceTree = "<group>"; };
+		8F61BFF92ACBF82F002180D0 /* BottomStackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomStackItem.swift; sourceTree = "<group>"; };
+		8F61BFFD2ACBF9CA002180D0 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		8F86589A2ABC247100B64F63 /* Event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Event.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F86589D2ABC247100B64F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F86589F2ABC247100B64F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,12 +98,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F61BFF82ACBF80E002180D0 /* FLUtilities in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F61BFF12ACBF6BE002180D0 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				8F61BFF92ACBF82F002180D0 /* BottomStackItem.swift */,
+				8F61BFF22ACBF6D2002180D0 /* StackItemView.swift */,
+				8F61BFF32ACBF6D2002180D0 /* StackItemView.xib */,
+				8F61BFFD2ACBF9CA002180D0 /* TabBarView.swift */,
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		8F8658912ABC247100B64F63 = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +409,7 @@
 		8FCF99D32AC2BE25000996D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8F61BFF12ACBF6BE002180D0 /* TabView */,
 				8FCF99CB2AC2BBF6000996D4 /* TabBarViewController.swift */,
 			);
 			path = Views;
@@ -418,6 +440,9 @@
 			dependencies = (
 			);
 			name = Event;
+			packageProductDependencies = (
+				8F61BFF72ACBF80E002180D0 /* FLUtilities */,
+			);
 			productName = Event;
 			productReference = 8F86589A2ABC247100B64F63 /* Event.app */;
 			productType = "com.apple.product-type.application";
@@ -446,6 +471,9 @@
 				Base,
 			);
 			mainGroup = 8F8658912ABC247100B64F63;
+			packageReferences = (
+				8F61BFF62ACBF80E002180D0 /* XCRemoteSwiftPackageReference "FLUtilities" */,
+			);
 			productRefGroup = 8F86589B2ABC247100B64F63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,6 +490,7 @@
 			files = (
 				8F8658AA2ABC247400B64F63 /* LaunchScreen.storyboard in Resources */,
 				8F8658A72ABC247400B64F63 /* Assets.xcassets in Resources */,
+				8F61BFF52ACBF6D2002180D0 /* StackItemView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +511,7 @@
 				8F8B50BD2ABC5D56009FABD9 /* EventListModelInterface.swift in Sources */,
 				8FB9E3B12ACAAE2A001F4968 /* GiftSceneDIContainer.swift in Sources */,
 				8F8B50B02ABC553C009FABD9 /* AppDIContainer.swift in Sources */,
+				8F61BFFE2ACBF9CA002180D0 /* TabBarView.swift in Sources */,
 				8FB9E39D2ACA7FEE001F4968 /* TicketListScreen.swift in Sources */,
 				8F8658C02ABC319000B64F63 /* Alertable.swift in Sources */,
 				8FB9E3A92ACAAD0F001F4968 /* GiftListScreen.swift in Sources */,
@@ -489,7 +519,9 @@
 				8FB9E3982ACA7FBF001F4968 /* TicketListModelInterface.swift in Sources */,
 				8F8B50B52ABC59CE009FABD9 /* EventFlowCoordinator.swift in Sources */,
 				8FCF99D22AC2BDB7000996D4 /* TabBarViewModelInterface.swift in Sources */,
+				8F61BFFA2ACBF82F002180D0 /* BottomStackItem.swift in Sources */,
 				8FCF99D02AC2BC62000996D4 /* TabBarSceneDIContainer.swift in Sources */,
+				8F61BFF42ACBF6D2002180D0 /* StackItemView.swift in Sources */,
 				8F8B50AD2ABC5502009FABD9 /* AppFlowCoordinator.swift in Sources */,
 				8F8658B82ABC315A00B64F63 /* BaseViewController.swift in Sources */,
 				8FCF99CA2AC2BBD6000996D4 /* TabBarFlowCoordinator.swift in Sources */,
@@ -714,6 +746,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F61BFF62ACBF80E002180D0 /* XCRemoteSwiftPackageReference "FLUtilities" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nickelfox/FLUtilities.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F61BFF72ACBF80E002180D0 /* FLUtilities */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F61BFF62ACBF80E002180D0 /* XCRemoteSwiftPackageReference "FLUtilities" */;
+			productName = FLUtilities;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F8658922ABC247100B64F63 /* Project object */;
 }

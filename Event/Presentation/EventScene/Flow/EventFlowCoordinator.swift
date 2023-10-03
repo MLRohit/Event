@@ -31,7 +31,7 @@ final class EventFlowCoordinator {
         let actions = EventListViewModelActions(openDetails: openDetailsPage)
         let navVC = UINavigationController(rootViewController: dependencies.makeEventListController(actions: actions))
         navigationController = navVC
-        navigationController?.tabBarItem = UITabBarItem(title: "Event", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
+//        navigationController?.tabBarItem = UITabBarItem(title: "Event", image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
         return navVC
     }
     

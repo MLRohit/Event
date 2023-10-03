@@ -9,6 +9,14 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
     
+    // MARK: - Properties
+    
+    private lazy var customBar: TabBarView = {
+        let bar = TabBarView()
+        bar.constrainHeight(constant: tabBar.bounds.height)
+        return bar
+    }()
+    
     // MARK: - Create TabBarViewController
     
     static func create(with viewModel: DefaultTabBarViewModel, childViewControllers: [UIViewController]) -> TabBarViewController {
@@ -26,6 +34,22 @@ class TabBarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.backgroundColor = .white
+        prepareLayout()
+        setupActions()
+    }
+    
+    private func prepareLayout() {
+        view.addSubview(customBar)
+        customBar.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        customBar.centerXInSuperview()
+        customBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+    }
+    
+    private func setupActions() {
+        customBar.onTabSelect = { [weak self] index in
+            self?.selectedIndex = index
+        }
     }
 
 }
