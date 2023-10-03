@@ -41,9 +41,8 @@ class TabBarViewController: UITabBarController {
     
     private func prepareLayout() {
         view.addSubview(customBar)
-        customBar.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        customBar.anchor(leading: view.safeAreaLayoutGuide.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor)
         customBar.centerXInSuperview()
-        customBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
     }
     
     private func setupActions() {
