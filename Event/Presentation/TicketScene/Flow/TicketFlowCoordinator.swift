@@ -31,7 +31,6 @@ final class TicketFlowCoordinator {
         let actions = TicketListViewModelActions(openDetails: openDetailsPage)
         let navVC = BaseNavigationController(rootViewController: dependencies.makeTicketListController(actions: actions))
         navigationController = navVC
-//        navigationController?.tabBarItem = UITabBarItem(title: "Ticket", image: UIImage(systemName: "ticket"), selectedImage: UIImage(systemName: "ticket.fill"))
         return navVC
     }
     

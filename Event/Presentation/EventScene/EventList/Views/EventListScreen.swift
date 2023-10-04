@@ -9,16 +9,15 @@ import UIKit
 
 class EventListScreen: BaseScreen {
     
-    // MARK: - Properties
+    // MARK: - UIProperties
     
-    var onDetailsButtonTap: (() -> Void)?
+    private(set) lazy var tableView: UITableView = {
+        $0.backgroundColor = .appBackground
+        $0.separatorStyle = .none
+        $0.showsVerticalScrollIndicator = false
+        return $0
+    }(UITableView(frame: bounds, style: .plain))
     
-    private lazy var openDetailsButton: UIButton = {
-        let button = UIButton()
-        button.setTitle("Details", for: .normal)
-        button.addTarget(self, action: #selector(buttonTapped), for: .touchDown)
-        return button
-    }()
     
     // MARK: - Life Cycle
     
@@ -28,19 +27,11 @@ class EventListScreen: BaseScreen {
     }
     
     func setupLayout() {
-        backgroundColor = .darkGray
-        addSubview(openDetailsButton)
-        openDetailsButton.centerXInSuperview()
-        openDetailsButton.centerYInSuperview()
+        addSubview(tableView)
+        tableView.fillSuperview()
     }
     
     @objc private func buttonTapped(_ sender: UIButton) {
-        switch sender {
-        case openDetailsButton:
-            onDetailsButtonTap?()
-        default:
-            return
-        }
     }
     
 }

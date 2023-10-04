@@ -24,7 +24,9 @@ final class AppDIContainer {
     }
     
     func makeTabBarSceneDIContainer() -> TabBarSceneDIContainer {
-        let dependencies = TabBarSceneDIContainer.Dependencies(eventDependencies: makeEventSceneDIContainer(), ticketDependencies: makeTicketSceneDIContainer(), giftDependencies: makeGiftSceneDIContainer())
+        let dependencies = TabBarSceneDIContainer.Dependencies(eventDependencies: makeEventSceneDIContainer(),
+                                                               ticketDependencies: makeTicketSceneDIContainer(),
+                                                               giftDependencies: makeGiftSceneDIContainer())
         return TabBarSceneDIContainer(dependencies: dependencies)
     }
     

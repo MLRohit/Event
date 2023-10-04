@@ -15,7 +15,7 @@ class EventListViewController: BaseViewController {
         baseScreen as! EventListScreen
     }
     private var viewModel: DefaultEventListViewModel!
-        
+    
     static func create(of screen: BaseScreen = EventListScreen(), with viewModel: DefaultEventListViewModel) -> EventListViewController {
         let view = EventListViewController(baseScreen: screen)
         view.viewModel = viewModel
@@ -23,16 +23,37 @@ class EventListViewController: BaseViewController {
     }
     
     // MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if navigationController != nil {
-            print("EventListViewController: Found navigation")
-        }
-        screen.onDetailsButtonTap = { [weak self] in
-            self?.viewModel.openDetails()
-        }
+        setupNavigationBar()
     }
-
+    
+    private func setupNavigationBar() {
+        navigationItem.leftBarButtonItem = createBarButton(image: .back, action: #selector(onBackTap))
+        navigationItem.rightBarButtonItems = [createBarButton(image: .navCalender, action: #selector(onCalendarTap)),
+                                              createBarButton(image: .navLocation, action: #selector(onLocationTap))]
+        navigationItem.title = "Events"
+    }
+    
+    private func createBarButton(image: UIImage?, action: Selector) -> UIBarButtonItem {
+        UIBarButtonItem(image: image,
+                        style: .plain,
+                        target: self,
+                        action: action)
+    }
+    
+    @objc private func onBackTap() {
+        print("Back Button Tapped")
+    }
+    
+    @objc private func onLocationTap() {
+        print("Location Tapped")
+    }
+    
+    @objc private func onCalendarTap() {
+        print("Calendar Tapped")
+    }
+    
 }
 

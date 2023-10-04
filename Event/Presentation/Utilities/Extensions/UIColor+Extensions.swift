@@ -21,5 +21,6 @@ extension UIColor {
     // MARK: - App Colors
     
     static var appGreen: UIColor { return named("AppGreen") }
-    
+    static var appBackground: UIColor { return named("AppBackground") }
+
 }
