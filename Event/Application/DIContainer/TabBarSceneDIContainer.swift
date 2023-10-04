@@ -47,6 +47,7 @@ final class TabBarSceneDIContainer {
     
 }
 
+// MARK: - Navigaiton Functions
 extension TabBarSceneDIContainer {
     
     private func getEventNavigation() -> UINavigationController {
