@@ -50,7 +50,7 @@ class StackItemView: UIView {
     private func configure(_ item: Any?) {
         guard let model = item as? BottomStackItem else { return }
         self.titleLabel.text = model.title
-        self.imgView.image = UIImage(named: model.image)
+        self.imgView.image = model.image
         self.isSelected = model.isSelected
     }
     

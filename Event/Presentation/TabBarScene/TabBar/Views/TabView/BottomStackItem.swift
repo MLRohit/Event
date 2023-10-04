@@ -5,16 +5,16 @@
 //  Created by Rohit Lama on 03/10/2023.
 //
 
-import Foundation
+import UIKit
 
 class BottomStackItem {
     
     var title: String
-    var image: String
+    var image: UIImage
     var isSelected: Bool
     
     init(title: String,
-         image: String,
+         image: UIImage,
          isSelected: Bool = false) {
         self.title = title
         self.image = image

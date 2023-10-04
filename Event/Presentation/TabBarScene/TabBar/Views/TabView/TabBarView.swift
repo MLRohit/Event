@@ -37,9 +37,9 @@ class TabBarView: UIView {
     
     private lazy var tabModels: [BottomStackItem] = {
         return [
-            BottomStackItem(title: "Event", image: "calendar"),
-            BottomStackItem(title: "Ticket", image: "ticket"),
-            BottomStackItem(title: "Gift", image: "gift"),
+            BottomStackItem(title: "Event", image: .tabCalender),
+            BottomStackItem(title: "Ticket", image: .tabTicket),
+            BottomStackItem(title: "Gift", image: .tabGift),
         ]
     }()
     

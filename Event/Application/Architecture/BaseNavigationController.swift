@@ -18,6 +18,7 @@ class BaseNavigationController: UINavigationController {
     
     private func setup() {
         setupAppreance()
+        setupNavigationBar()
     }
     
     private func setupAppreance() {
@@ -35,6 +36,42 @@ class BaseNavigationController: UINavigationController {
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    func setupNavigationBar() {
+        // Create a back button
+        let backButton = UIBarButtonItem(title: "Back",
+                                         style: .plain,
+                                         target: self,
+                                         action: #selector(backButtonTapped))
+        navigationItem.leftBarButtonItem = backButton
+
+        // Create two right buttons
+        let rightButton1 = UIBarButtonItem(image: ,
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(rightButton1Tapped))
+        let rightButton2 = UIBarButtonItem(image: ,
+                                           style: .plain,
+                                           target: self,
+                                           action: #selector(rightButton2Tapped))
+        navigationItem.rightBarButtonItems = [rightButton1, rightButton2]
+
+        // Set the title
+        navigationItem.title = "Your Title Here"
+    }
+
+    @objc func backButtonTapped() {
+        // Handle back button tap here
+        popViewController(animated: true)
+    }
+
+    @objc func rightButton1Tapped() {
+        // Handle the first right button tap here
+    }
+
+    @objc func rightButton2Tapped() {
+        // Handle the second right button tap here
     }
     
     deinit {

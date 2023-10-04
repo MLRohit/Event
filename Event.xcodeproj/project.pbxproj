@@ -19,6 +19,7 @@
 		8F8095E72ACD5026000EFE74 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8095E62ACD5026000EFE74 /* BaseNavigationController.swift */; };
 		8F8095E92ACD5281000EFE74 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8095E82ACD5281000EFE74 /* Color.xcassets */; };
 		8F8095EC2ACD53C1000EFE74 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8095EB2ACD53C1000EFE74 /* UIColor+Extensions.swift */; };
+		8F8095EE2ACD5A42000EFE74 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8095ED2ACD5A42000EFE74 /* UIImage+Extensions.swift */; };
 		8F86589E2ABC247100B64F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86589D2ABC247100B64F63 /* AppDelegate.swift */; };
 		8F8658A02ABC247100B64F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86589F2ABC247100B64F63 /* SceneDelegate.swift */; };
 		8F8658A22ABC247100B64F63 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8658A12ABC247100B64F63 /* EventListViewController.swift */; };
@@ -68,6 +69,7 @@
 		8F8095E62ACD5026000EFE74 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		8F8095E82ACD5281000EFE74 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		8F8095EB2ACD53C1000EFE74 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		8F8095ED2ACD5A42000EFE74 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		8F86589A2ABC247100B64F63 /* Event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Event.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F86589D2ABC247100B64F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F86589F2ABC247100B64F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				8F8095EB2ACD53C1000EFE74 /* UIColor+Extensions.swift */,
+				8F8095ED2ACD5A42000EFE74 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				8FCF99C32AC29128000996D4 /* Autolayout.swift in Sources */,
 				8F8B50BF2ABC5E11009FABD9 /* EventListScreen.swift in Sources */,
 				8F8095E72ACD5026000EFE74 /* BaseNavigationController.swift in Sources */,
+				8F8095EE2ACD5A42000EFE74 /* UIImage+Extensions.swift in Sources */,
 				8FCF99CC2AC2BBF6000996D4 /* TabBarViewController.swift in Sources */,
 				8F8B50BD2ABC5D56009FABD9 /* EventListModelInterface.swift in Sources */,
 				8FB9E3B12ACAAE2A001F4968 /* GiftSceneDIContainer.swift in Sources */,
