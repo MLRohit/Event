@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Flix
+//  Event
 //
 //  Created by Rohit Lama on 13/09/2023.
 //
