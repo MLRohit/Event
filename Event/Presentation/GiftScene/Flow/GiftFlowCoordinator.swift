@@ -31,7 +31,7 @@ final class GiftFlowCoordinator {
     
     func start() -> UINavigationController {
         let actions = GiftListViewModelActions(openDetails: openDetailsPage)
-        let navVC = UINavigationController(rootViewController: dependencies.makeGiftListController(actions: actions))
+        let navVC = BaseNavigationController(rootViewController: dependencies.makeGiftListController(actions: actions))
         navigationController = navVC
 //        navigationController?.tabBarItem = UITabBarItem(title: "Gift", image: UIImage(systemName: "gift"), selectedImage: UIImage(systemName: "gift.fill"))
         return navVC

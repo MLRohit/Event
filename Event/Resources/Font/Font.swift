@@ -5,7 +5,7 @@
 //  Created by Rohit Lama on 04/10/2023.
 //
 
-import Foundation
+import UIKit
 
 enum FontSize: CGFloat {
     case heading1 = 16,
@@ -38,7 +38,7 @@ enum FontType {
 
 extension UIFont {
     
-    static func appFont(type: FontType, size: FontSize = .size16) -> UIFont {
+    static func appFont(type: FontType, size: FontSize = .heading1) -> UIFont {
         guard let font = UIFont(name: type.name, size: size.rawValue) else {
             fatalError("\(type.name) is not available in the system")
         }
