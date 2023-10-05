@@ -31,4 +31,7 @@ extension UIImage {
     static var tabGift: UIImage { return UIImage.named("gift") }
     static var tabTicket: UIImage { return UIImage.named("ticket") }
     
+    /// Static Images For Event
+    static var eventBanner: UIImage { return UIImage.named("eventBanner") }
+
 }

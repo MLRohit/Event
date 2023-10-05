@@ -49,6 +49,11 @@
 		8FB9E3AD2ACAAD8B001F4968 /* GiftListModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E3AC2ACAAD8B001F4968 /* GiftListModelInterface.swift */; };
 		8FB9E3AF2ACAADE4001F4968 /* GiftFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E3AE2ACAADE4001F4968 /* GiftFlowCoordinator.swift */; };
 		8FB9E3B12ACAAE2A001F4968 /* GiftSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB9E3B02ACAAE2A001F4968 /* GiftSceneDIContainer.swift */; };
+		8FBB079A2ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */; };
+		8FBB079C2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */; };
+		8FBB079E2ACE6B3300DF72D6 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB079D2ACE6B3300DF72D6 /* UITableView+Extensions.swift */; };
+		8FBB07A02ACE6B5700DF72D6 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB079F2ACE6B5700DF72D6 /* UICollectionView+Extensions.swift */; };
+		8FBB07A22ACE7B0600DF72D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07A12ACE7B0600DF72D6 /* UIView+Extensions.swift */; };
 		8FCF99C32AC29128000996D4 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99C22AC29128000996D4 /* Autolayout.swift */; };
 		8FCF99CA2AC2BBD6000996D4 /* TabBarFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99C92AC2BBD6000996D4 /* TabBarFlowCoordinator.swift */; };
 		8FCF99CC2AC2BBF6000996D4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99CB2AC2BBF6000996D4 /* TabBarViewController.swift */; };
@@ -101,6 +106,11 @@
 		8FB9E3AC2ACAAD8B001F4968 /* GiftListModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftListModelInterface.swift; sourceTree = "<group>"; };
 		8FB9E3AE2ACAADE4001F4968 /* GiftFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftFlowCoordinator.swift; sourceTree = "<group>"; };
 		8FB9E3B02ACAAE2A001F4968 /* GiftSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftSceneDIContainer.swift; sourceTree = "<group>"; };
+		8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListBannerTableViewCell.swift; sourceTree = "<group>"; };
+		8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListBannerCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FBB079D2ACE6B3300DF72D6 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		8FBB079F2ACE6B5700DF72D6 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		8FBB07A12ACE7B0600DF72D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		8FCF99C22AC29128000996D4 /* Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
 		8FCF99C92AC2BBD6000996D4 /* TabBarFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlowCoordinator.swift; sourceTree = "<group>"; };
 		8FCF99CB2AC2BBF6000996D4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +158,9 @@
 			children = (
 				8F8095EB2ACD53C1000EFE74 /* UIColor+Extensions.swift */,
 				8F8095ED2ACD5A42000EFE74 /* UIImage+Extensions.swift */,
+				8FBB079D2ACE6B3300DF72D6 /* UITableView+Extensions.swift */,
+				8FBB079F2ACE6B5700DF72D6 /* UICollectionView+Extensions.swift */,
+				8FBB07A12ACE7B0600DF72D6 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -273,6 +286,7 @@
 		8F8658C42ABC31FC00B64F63 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8FBB07962ACE69CE00DF72D6 /* Cells */,
 				8F8658A12ABC247100B64F63 /* EventListViewController.swift */,
 				8F8B50BE2ABC5E11009FABD9 /* EventListScreen.swift */,
 			);
@@ -403,6 +417,31 @@
 				8FB9E3AC2ACAAD8B001F4968 /* GiftListModelInterface.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8FBB07962ACE69CE00DF72D6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB07982ACE69DA00DF72D6 /* CollectionView */,
+				8FBB07972ACE69D400DF72D6 /* TableView */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8FBB07972ACE69D400DF72D6 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		8FBB07982ACE69DA00DF72D6 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		8FCF99C12AC290F9000996D4 /* Layouts */ = {
@@ -549,6 +588,7 @@
 				8F8658A22ABC247100B64F63 /* EventListViewController.swift in Sources */,
 				8F8B50AB2ABC54DB009FABD9 /* AppConfig.swift in Sources */,
 				8FB9E39F2ACA800D001F4968 /* TicketFlowCoordinator.swift in Sources */,
+				8FBB07A02ACE6B5700DF72D6 /* UICollectionView+Extensions.swift in Sources */,
 				8FCF99C32AC29128000996D4 /* Autolayout.swift in Sources */,
 				8F8B50BF2ABC5E11009FABD9 /* EventListScreen.swift in Sources */,
 				8F8095E72ACD5026000EFE74 /* BaseNavigationController.swift in Sources */,
@@ -556,6 +596,7 @@
 				8FCF99CC2AC2BBF6000996D4 /* TabBarViewController.swift in Sources */,
 				8F8B50BD2ABC5D56009FABD9 /* EventListModelInterface.swift in Sources */,
 				8FB9E3B12ACAAE2A001F4968 /* GiftSceneDIContainer.swift in Sources */,
+				8FBB07A22ACE7B0600DF72D6 /* UIView+Extensions.swift in Sources */,
 				8F8B50B02ABC553C009FABD9 /* AppDIContainer.swift in Sources */,
 				8F61BFFE2ACBF9CA002180D0 /* TabBarView.swift in Sources */,
 				8FB9E39D2ACA7FEE001F4968 /* TicketListScreen.swift in Sources */,
@@ -570,6 +611,7 @@
 				8FCF99D02AC2BC62000996D4 /* TabBarSceneDIContainer.swift in Sources */,
 				8F61BFF42ACBF6D2002180D0 /* StackItemView.swift in Sources */,
 				8F8B50AD2ABC5502009FABD9 /* AppFlowCoordinator.swift in Sources */,
+				8FBB079A2ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift in Sources */,
 				8F8658B82ABC315A00B64F63 /* BaseViewController.swift in Sources */,
 				8FCF99CA2AC2BBD6000996D4 /* TabBarFlowCoordinator.swift in Sources */,
 				8FB9E39A2ACA7FD9001F4968 /* TicketListViewController.swift in Sources */,
@@ -579,6 +621,8 @@
 				8F8658A02ABC247100B64F63 /* SceneDelegate.swift in Sources */,
 				8FB9E3A12ACAA514001F4968 /* TicketSceneDIContainer.swift in Sources */,
 				8FB9E3AF2ACAADE4001F4968 /* GiftFlowCoordinator.swift in Sources */,
+				8FBB079E2ACE6B3300DF72D6 /* UITableView+Extensions.swift in Sources */,
+				8FBB079C2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift in Sources */,
 				8FB9E3A72ACAAD05001F4968 /* GiftListViewController.swift in Sources */,
 				8F8B50B72ABC5A7F009FABD9 /* EventListViewModel.swift in Sources */,
 				8F8658BF2ABC319000B64F63 /* Observable.swift in Sources */,

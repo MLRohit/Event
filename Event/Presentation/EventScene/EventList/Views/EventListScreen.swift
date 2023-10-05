@@ -23,15 +23,21 @@ class EventListScreen: BaseScreen {
     
     override func prepareLayout() {
         super.prepareLayout()
+        registerCells()
         setupLayout()
     }
     
-    func setupLayout() {
+    private func setupLayout() {
         addSubview(tableView)
         tableView.fillSuperview()
     }
     
+    private func registerCells() {
+        tableView.registerCell(EventListBannerTableViewCell.self)
+    }
+    
     @objc private func buttonTapped(_ sender: UIButton) {
     }
+    
     
 }

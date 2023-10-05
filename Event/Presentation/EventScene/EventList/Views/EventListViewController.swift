@@ -27,6 +27,7 @@ class EventListViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
+        setupTableView()
     }
     
     private func setupNavigationBar() {
@@ -36,12 +37,19 @@ class EventListViewController: BaseViewController {
         navigationItem.title = "Events"
     }
     
+    private func setupTableView() {
+        screen.tableView.dataSource = self
+        screen.tableView.delegate = self
+    }
+    
     private func createBarButton(image: UIImage?, action: Selector) -> UIBarButtonItem {
         UIBarButtonItem(image: image,
                         style: .plain,
                         target: self,
                         action: action)
     }
+    
+    // MARK: - @objc Functions
     
     @objc private func onBackTap() {
         print("Back Button Tapped")
@@ -57,3 +65,31 @@ class EventListViewController: BaseViewController {
     
 }
 
+// MARK: - UITableViewDataSource
+
+extension EventListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: EventListBannerTableViewCell = tableView.dequeueCell()
+        return cell
+    }
+    
+}
+
+// MARK: - UITableViewDelegate
+
+extension EventListViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Cell at: \(indexPath.row) tapped")
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        UITableView.automaticDimension
+    }
+    
+}
