@@ -69,11 +69,19 @@ class EventListViewController: BaseViewController {
 
 extension EventListViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 1 {
+            let cell: EventListUpcomingEventsTableViewCell = tableView.dequeueCell()
+            return cell
+        }
         let cell: EventListBannerTableViewCell = tableView.dequeueCell()
         return cell
     }
@@ -89,7 +97,17 @@ extension EventListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        UITableView.automaticDimension
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell: EventListSectionHeaderTableViewCell = tableView.dequeueCell()
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard section == 1 else { return .zero }
+        return UITableView.automaticDimension
     }
     
 }

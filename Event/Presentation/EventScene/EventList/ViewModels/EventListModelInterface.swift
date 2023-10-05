@@ -14,7 +14,7 @@ protocol EventListViewModelInput {
 }
 
 protocol EventListViewModelOutput {
-    
+    var numberOfSections: Int { get set }
 }
 
 struct EventListViewModelActions {

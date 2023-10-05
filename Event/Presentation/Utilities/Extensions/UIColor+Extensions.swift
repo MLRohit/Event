@@ -22,5 +22,7 @@ extension UIColor {
     
     static var appGreen: UIColor { return named("AppGreen") }
     static var appBackground: UIColor { return named("AppBackground") }
+    static var titleLabel: UIColor { return named("TitleLabel") }
+    static var subTitleLabel: UIColor { return named("SubTitleLabel") }
 
 }

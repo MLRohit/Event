@@ -13,6 +13,7 @@ class EventListBannerCollectionViewCell: UICollectionViewCell {
     
     private lazy var bannerImageView: UIImageView = {
         $0.image = .eventBanner
+        $0.contentMode = .scaleAspectFill
         return $0
     }(UIImageView())
     

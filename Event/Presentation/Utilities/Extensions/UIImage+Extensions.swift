@@ -33,5 +33,7 @@ extension UIImage {
     
     /// Static Images For Event
     static var eventBanner: UIImage { return UIImage.named("eventBanner") }
+    static var arrowRight: UIImage? { return UIImage(systemName: "arrow.right") }
+
 
 }

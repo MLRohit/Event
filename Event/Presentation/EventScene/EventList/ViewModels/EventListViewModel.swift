@@ -13,6 +13,8 @@ class EventListViewModel: DefaultEventListViewModel {
     
     private let actions: EventListViewModelActions?
     
+    var numberOfSections: Int = 2
+    
     // MARK: - Initialization
 
     init(actions: EventListViewModelActions? = nil) {

@@ -54,6 +54,9 @@
 		8FBB079E2ACE6B3300DF72D6 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB079D2ACE6B3300DF72D6 /* UITableView+Extensions.swift */; };
 		8FBB07A02ACE6B5700DF72D6 /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB079F2ACE6B5700DF72D6 /* UICollectionView+Extensions.swift */; };
 		8FBB07A22ACE7B0600DF72D6 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07A12ACE7B0600DF72D6 /* UIView+Extensions.swift */; };
+		8FBB07A82ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07A72ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift */; };
+		8FBB07AA2ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07A92ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift */; };
+		8FBB07AC2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBB07AB2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift */; };
 		8FCF99C32AC29128000996D4 /* Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99C22AC29128000996D4 /* Autolayout.swift */; };
 		8FCF99CA2AC2BBD6000996D4 /* TabBarFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99C92AC2BBD6000996D4 /* TabBarFlowCoordinator.swift */; };
 		8FCF99CC2AC2BBF6000996D4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99CB2AC2BBF6000996D4 /* TabBarViewController.swift */; };
@@ -111,6 +114,9 @@
 		8FBB079D2ACE6B3300DF72D6 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		8FBB079F2ACE6B5700DF72D6 /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
 		8FBB07A12ACE7B0600DF72D6 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		8FBB07A72ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListSectionHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		8FBB07A92ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListUpcomingEventsTableViewCell.swift; sourceTree = "<group>"; };
+		8FBB07AB2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListUpcomingEventsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8FCF99C22AC29128000996D4 /* Autolayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Autolayout.swift; sourceTree = "<group>"; };
 		8FCF99C92AC2BBD6000996D4 /* TabBarFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlowCoordinator.swift; sourceTree = "<group>"; };
 		8FCF99CB2AC2BBF6000996D4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -432,6 +438,8 @@
 			isa = PBXGroup;
 			children = (
 				8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */,
+				8FBB07A72ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift */,
+				8FBB07A92ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -440,6 +448,7 @@
 			isa = PBXGroup;
 			children = (
 				8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */,
+				8FBB07AB2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -600,6 +609,7 @@
 				8F8B50B02ABC553C009FABD9 /* AppDIContainer.swift in Sources */,
 				8F61BFFE2ACBF9CA002180D0 /* TabBarView.swift in Sources */,
 				8FB9E39D2ACA7FEE001F4968 /* TicketListScreen.swift in Sources */,
+				8FBB07AA2ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift in Sources */,
 				8F8658C02ABC319000B64F63 /* Alertable.swift in Sources */,
 				8FB9E3A92ACAAD0F001F4968 /* GiftListScreen.swift in Sources */,
 				8FB9E3962ACA7FA7001F4968 /* TicketListViewModel.swift in Sources */,
@@ -621,6 +631,7 @@
 				8F8658A02ABC247100B64F63 /* SceneDelegate.swift in Sources */,
 				8FB9E3A12ACAA514001F4968 /* TicketSceneDIContainer.swift in Sources */,
 				8FB9E3AF2ACAADE4001F4968 /* GiftFlowCoordinator.swift in Sources */,
+				8FBB07AC2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift in Sources */,
 				8FBB079E2ACE6B3300DF72D6 /* UITableView+Extensions.swift in Sources */,
 				8FBB079C2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift in Sources */,
 				8FB9E3A72ACAAD05001F4968 /* GiftListViewController.swift in Sources */,
@@ -629,6 +640,7 @@
 				8F8095E52ACD4A6F000EFE74 /* Font.swift in Sources */,
 				8FB9E3AB2ACAAD80001F4968 /* GiftListViewModel.swift in Sources */,
 				8F8658B92ABC315A00B64F63 /* BaseScreen.swift in Sources */,
+				8FBB07A82ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

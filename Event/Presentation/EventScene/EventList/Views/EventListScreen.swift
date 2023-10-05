@@ -16,7 +16,7 @@ class EventListScreen: BaseScreen {
         $0.separatorStyle = .none
         $0.showsVerticalScrollIndicator = false
         return $0
-    }(UITableView(frame: bounds, style: .plain))
+    }( UITableView(frame: bounds, style: .plain) )
     
     
     // MARK: - Life Cycle
@@ -34,6 +34,8 @@ class EventListScreen: BaseScreen {
     
     private func registerCells() {
         tableView.registerCell(EventListBannerTableViewCell.self)
+        tableView.registerCell(EventListSectionHeaderTableViewCell.self)
+        tableView.registerCell(EventListUpcomingEventsTableViewCell.self)
     }
     
     @objc private func buttonTapped(_ sender: UIButton) {
