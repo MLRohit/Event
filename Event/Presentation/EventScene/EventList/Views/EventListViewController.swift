@@ -79,7 +79,7 @@ extension EventListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 1 {
-            let cell: EventListUpcomingEventsTableViewCell = tableView.dequeueCell()
+            let cell: EventListFeaturedEventsTableViewCell = tableView.dequeueCell()
             return cell
         }
         let cell: EventListBannerTableViewCell = tableView.dequeueCell()

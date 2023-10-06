@@ -10,7 +10,7 @@ import UIKit
 class EventListUpcomingEventsCollectionViewCell: UICollectionViewCell {
     
     // MARK: - UI Properties
-    private lazy var titleLabel: UILabel = {
+    private(set) lazy var titleLabel: UILabel = {
         $0.text = "Thursday"
         $0.font = .appFont(type: .roboto(.bold), size: .heading1)
         $0.textColor = .appGreen
@@ -18,7 +18,7 @@ class EventListUpcomingEventsCollectionViewCell: UICollectionViewCell {
         return $0
     }(UILabel())
     
-    private lazy var subTitleLabel: UILabel = {
+    private(set) lazy var subTitleLabel: UILabel = {
         $0.text = "22 Mar, Tue"
         $0.numberOfLines = 1
         $0.font = .appFont(type: .roboto(.regular), size: .heading2)
@@ -26,7 +26,7 @@ class EventListUpcomingEventsCollectionViewCell: UICollectionViewCell {
         return $0
     }(UILabel())
     
-    private lazy var mainStackView: UIStackView = {
+    private(set) lazy var mainStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [titleLabel, subTitleLabel])
         stackView.alignment = .fill
         stackView.distribution = .fill

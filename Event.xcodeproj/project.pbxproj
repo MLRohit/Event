@@ -63,6 +63,8 @@
 		8FCF99CE2AC2BC1E000996D4 /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99CD2AC2BC1E000996D4 /* TabBarViewModel.swift */; };
 		8FCF99D02AC2BC62000996D4 /* TabBarSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99CF2AC2BC61000996D4 /* TabBarSceneDIContainer.swift */; };
 		8FCF99D22AC2BDB7000996D4 /* TabBarViewModelInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF99D12AC2BDB7000996D4 /* TabBarViewModelInterface.swift */; };
+		8FD92DEB2ACFBC7C007D1F3D /* EventListFeaturedEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD92DEA2ACFBC7C007D1F3D /* EventListFeaturedEventsTableViewCell.swift */; };
+		8FD92DED2ACFBC95007D1F3D /* EventListFeaturedEventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD92DEC2ACFBC95007D1F3D /* EventListFeaturedEventsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +125,8 @@
 		8FCF99CD2AC2BC1E000996D4 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		8FCF99CF2AC2BC61000996D4 /* TabBarSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSceneDIContainer.swift; sourceTree = "<group>"; };
 		8FCF99D12AC2BDB7000996D4 /* TabBarViewModelInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModelInterface.swift; sourceTree = "<group>"; };
+		8FD92DEA2ACFBC7C007D1F3D /* EventListFeaturedEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListFeaturedEventsTableViewCell.swift; sourceTree = "<group>"; };
+		8FD92DEC2ACFBC95007D1F3D /* EventListFeaturedEventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListFeaturedEventsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,29 +432,12 @@
 		8FBB07962ACE69CE00DF72D6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				8FBB07982ACE69DA00DF72D6 /* CollectionView */,
-				8FBB07972ACE69D400DF72D6 /* TableView */,
+				8FD92DE92ACFBC5A007D1F3D /* Featured Events */,
+				8FD92DE82ACFBC2C007D1F3D /* Section Header */,
+				8FD92DE72ACFBC0D007D1F3D /* Upcoming Events */,
+				8FD92DE62ACFBBFA007D1F3D /* Banner */,
 			);
 			path = Cells;
-			sourceTree = "<group>";
-		};
-		8FBB07972ACE69D400DF72D6 /* TableView */ = {
-			isa = PBXGroup;
-			children = (
-				8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */,
-				8FBB07A72ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift */,
-				8FBB07A92ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift */,
-			);
-			path = TableView;
-			sourceTree = "<group>";
-		};
-		8FBB07982ACE69DA00DF72D6 /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */,
-				8FBB07AB2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift */,
-			);
-			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		8FCF99C12AC290F9000996D4 /* Layouts */ = {
@@ -510,6 +497,41 @@
 				8FCF99CD2AC2BC1E000996D4 /* TabBarViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8FD92DE62ACFBBFA007D1F3D /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB079B2ACE6AE100DF72D6 /* EventListBannerCollectionViewCell.swift */,
+				8FBB07992ACE6A4800DF72D6 /* EventListBannerTableViewCell.swift */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		8FD92DE72ACFBC0D007D1F3D /* Upcoming Events */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB07AB2ACEA23D00DF72D6 /* EventListUpcomingEventsCollectionViewCell.swift */,
+				8FBB07A92ACE9FE200DF72D6 /* EventListUpcomingEventsTableViewCell.swift */,
+			);
+			path = "Upcoming Events";
+			sourceTree = "<group>";
+		};
+		8FD92DE82ACFBC2C007D1F3D /* Section Header */ = {
+			isa = PBXGroup;
+			children = (
+				8FBB07A72ACE94CA00DF72D6 /* EventListSectionHeaderTableViewCell.swift */,
+			);
+			path = "Section Header";
+			sourceTree = "<group>";
+		};
+		8FD92DE92ACFBC5A007D1F3D /* Featured Events */ = {
+			isa = PBXGroup;
+			children = (
+				8FD92DEA2ACFBC7C007D1F3D /* EventListFeaturedEventsTableViewCell.swift */,
+				8FD92DEC2ACFBC95007D1F3D /* EventListFeaturedEventsCollectionViewCell.swift */,
+			);
+			path = "Featured Events";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -593,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FD92DEB2ACFBC7C007D1F3D /* EventListFeaturedEventsTableViewCell.swift in Sources */,
 				8FB9E3AD2ACAAD8B001F4968 /* GiftListModelInterface.swift in Sources */,
 				8F8658A22ABC247100B64F63 /* EventListViewController.swift in Sources */,
 				8F8B50AB2ABC54DB009FABD9 /* AppConfig.swift in Sources */,
@@ -614,6 +637,7 @@
 				8FB9E3A92ACAAD0F001F4968 /* GiftListScreen.swift in Sources */,
 				8FB9E3962ACA7FA7001F4968 /* TicketListViewModel.swift in Sources */,
 				8F8095EC2ACD53C1000EFE74 /* UIColor+Extensions.swift in Sources */,
+				8FD92DED2ACFBC95007D1F3D /* EventListFeaturedEventsCollectionViewCell.swift in Sources */,
 				8FB9E3982ACA7FBF001F4968 /* TicketListModelInterface.swift in Sources */,
 				8F8B50B52ABC59CE009FABD9 /* EventFlowCoordinator.swift in Sources */,
 				8FCF99D22AC2BDB7000996D4 /* TabBarViewModelInterface.swift in Sources */,

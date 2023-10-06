@@ -11,7 +11,7 @@ class EventListBannerTableViewCell: UITableViewCell {
         
     // MARK: - UI Properties
     
-    private lazy var collectionView: UICollectionView = {
+    private(set) lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.minimumLineSpacing = 12
@@ -25,7 +25,7 @@ class EventListBannerTableViewCell: UITableViewCell {
         return collectionView
     }()
     
-    private lazy var pageControl: UIPageControl = {
+    private(set) lazy var pageControl: UIPageControl = {
         let pageControl = UIPageControl()
         pageControl.currentPage = 0
         pageControl.numberOfPages = 3
@@ -34,7 +34,7 @@ class EventListBannerTableViewCell: UITableViewCell {
         return pageControl
     }()
     
-    private lazy var mainStackView: UIStackView = {
+    private(set) lazy var mainStackView: UIStackView = {
         $0.axis = .vertical
         $0.alignment = .fill
         $0.distribution = .fill

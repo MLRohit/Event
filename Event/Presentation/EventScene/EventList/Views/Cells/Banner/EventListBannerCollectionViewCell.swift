@@ -11,7 +11,7 @@ class EventListBannerCollectionViewCell: UICollectionViewCell {
     
     // MARK: - UI Properties
     
-    private lazy var bannerImageView: UIImageView = {
+    private(set) lazy var bannerImageView: UIImageView = {
         $0.image = .eventBanner
         $0.contentMode = .scaleAspectFill
         return $0

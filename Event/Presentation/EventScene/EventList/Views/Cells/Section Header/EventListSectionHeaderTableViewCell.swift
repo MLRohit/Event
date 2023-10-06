@@ -37,7 +37,7 @@ class EventListSectionHeaderTableViewCell: UITableViewCell {
     
     private lazy var viewAllLabel: UILabel = {
         $0.text = "View All"
-        $0.font = .appFont(type: .roboto(.regular), size: .heading3)
+        $0.font = .appFont(type: .roboto(.medium), size: .heading3)
         $0.textColor = .subTitleLabel
         $0.setContentHuggingPriority(.defaultHigh, for: .horizontal)
         return $0

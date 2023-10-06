@@ -19,6 +19,14 @@ extension UIImage {
         return image
     }
     
+    private static func systemName(_ imageName: String) -> UIImage {
+        guard let image = UIImage(systemName: imageName) else {
+            assertionFailure("The \(imageName) image is not available.")
+            return UIImage()
+        }
+        return image.withTintColor(.black, renderingMode: .alwaysOriginal)
+    }
+    
     // MARK: - Images
     
     /// NavBar Images
@@ -33,7 +41,8 @@ extension UIImage {
     
     /// Static Images For Event
     static var eventBanner: UIImage { return UIImage.named("eventBanner") }
-    static var arrowRight: UIImage? { return UIImage(systemName: "arrow.right") }
-
+    static var arrowRight: UIImage? { return UIImage.systemName("arrow.right") }
+    static var share: UIImage? { return UIImage.systemName("square.and.arrow.up.fill") }
+    static var heart: UIImage? { return UIImage.systemName( "heart") }
 
 }

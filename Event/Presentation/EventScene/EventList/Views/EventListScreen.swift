@@ -36,6 +36,7 @@ class EventListScreen: BaseScreen {
         tableView.registerCell(EventListBannerTableViewCell.self)
         tableView.registerCell(EventListSectionHeaderTableViewCell.self)
         tableView.registerCell(EventListUpcomingEventsTableViewCell.self)
+        tableView.registerCell(EventListFeaturedEventsTableViewCell.self)
     }
     
     @objc private func buttonTapped(_ sender: UIButton) {
